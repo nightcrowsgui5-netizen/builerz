@@ -990,6 +990,10 @@ a:focus {
 .team .team-text {
     position: relative;
     padding: 25px 15px;
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background: #030f27;
     transition: .5s;
@@ -2145,7 +2149,7 @@ a:focus {
 
 .footer .footer-link a:hover {
     color: #fdbe33;
-    letter-spacing: 1px;
+    transform: translateX(5px);
 }
 
 .footer .footer-contact p i {
