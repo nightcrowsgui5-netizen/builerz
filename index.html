@@ -392,23 +392,25 @@
 
             <!-- Video Start -->
             <div class="video wow fadeIn" data-wow-delay="0.1s">
+                <video class="video-bg" autoplay muted loop playsinline poster="img/carousel-1.jpg">
+                    <source src="img/pvh-video.mp4" type="video/mp4">
+                </video>
                 <div class="container">
-                    <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                    <button type="button" class="btn-play" data-toggle="modal" data-src="img/pvh-video.mp4" data-target="#videoModal">
                         <span></span>
                     </button>
                 </div>
             </div>
-            
+
             <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                            </button>        
-                            <!-- 16:9 aspect ratio -->
+                            </button>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                                <video class="embed-responsive-item" id="video" controls playsinline></video>
                             </div>
                         </div>
                     </div>
